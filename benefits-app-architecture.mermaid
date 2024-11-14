@@ -1,0 +1,43 @@
+graph TD
+    A[App Beneficios Empleados] --> B[Bienestar]
+    A --> C[Desarrollo]
+    A --> D[Finanzas]
+    A --> E[Servicios]
+    A --> F[Sistema Base]
+
+    %% Bienestar
+    B --> B1[Salud]
+    B --> B2[Descanso]
+    B1 --> B1.1[Gimnasio]
+    B1 --> B1.2[Guardería]
+    B1 --> B1.3[Seguros]
+    B2 --> B2.1[Turismo]
+    B2 --> B2.2[Colonia Vacaciones]
+
+    %% Desarrollo
+    C --> C1[Educación]
+    C1 --> C1.1[Cursos]
+    C1 --> C1.2[Universidad]
+
+    %% Finanzas
+    D --> D1[Personal Pay]
+    D --> D2[Préstamos]
+    D --> D3[Ahorro Compras]
+
+    %% Servicios
+    E --> E1[Comunicaciones]
+    E --> E2[Retail]
+    E1 --> E1.1[Internet]
+    E1 --> E1.2[Telefonía]
+
+    %% Sistema Base
+    F --> F1[Autenticación]
+    F --> F2[Geolocalización]
+    F --> F3[Búsqueda]
+    F --> F4[Personalización]
+    
+    %% Estilo
+    classDef primary fill:#e1f5fe,stroke:#01579b
+    classDef secondary fill:#f3e5f5,stroke:#4a148c
+    class A,B,C,D,E,F primary
+    class B1,B2,C1,D1,D2,D3,E1,E2,F1,F2,F3,F4 secondary
